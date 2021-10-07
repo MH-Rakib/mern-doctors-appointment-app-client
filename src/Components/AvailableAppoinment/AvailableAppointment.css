@@ -1,0 +1,9 @@
+.availableAppointment {
+  margin: 100px auto;
+}
+.availableAppointment-header {
+  text-align: center;
+  font-size: 28px;
+  color: var(--blue);
+  margin-bottom: 30px;
+}

@@ -1,0 +1,38 @@
+.appointmentForm {
+  width: 500px;
+  padding: 15px;
+}
+
+.inputField input {
+  width: 100%;
+  margin: 12px 0;
+  padding: 7px 14px;
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+}
+
+.inputField select {
+  width: 100%;
+  margin: 12px 0;
+  padding: 7px 14px;
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+}
+
+.submitAppointmentForm {
+  font-size: 20px;
+  color: #fff;
+  background-color: var(--cyan);
+  padding: 6px 20px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 20px;
+}

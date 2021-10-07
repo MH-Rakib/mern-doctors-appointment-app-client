@@ -1,0 +1,20 @@
+.businessInfoCard {
+  background-color: var(--blue);
+  padding: 40px;
+  border-radius: 3px;
+}
+.businessInfoCard-icon {
+  font-size: 45px;
+  color: #ccc;
+  text-align: center;
+}
+.businessInfoCard-title {
+  font-size: 22px;
+  color: #ddd;
+}
+
+.businessInfoCard-description {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+}

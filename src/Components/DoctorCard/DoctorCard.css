@@ -1,0 +1,33 @@
+.doctorCard {
+  box-shadow: 0 0 13px -5px #ccc;
+  margin: 5px;
+}
+
+.doctorCard-image {
+  background-color: #f9f9f9;
+  padding-top: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.doctorCard-image img {
+  margin-bottom: -50px;
+}
+
+.doctorCard-info {
+  padding: 20px 0;
+}
+
+.doctorCard-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+}
+.doctorCard-info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--blue);
+  text-align: center;
+  margin: 0;
+}

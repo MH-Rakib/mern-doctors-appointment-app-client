@@ -1,0 +1,32 @@
+.banner {
+  min-height: 700px;
+  /* margin: 100px auto; */
+}
+.banner-appoinment h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #333;
+}
+
+.banner-appoinment-calander h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--cyan);
+  margin-bottom: 25px;
+}
+
+.banner-appoinment p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.banner-appoinment button {
+  font-size: 20px;
+  color: #fff;
+  background-color: var(--blue);
+  padding: 12px 20px;
+  border-radius: 3px;
+  border: none;
+}

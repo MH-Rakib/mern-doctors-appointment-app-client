@@ -1,0 +1,39 @@
+.ourServices {
+  margin-bottom: 100px;
+}
+.ourServices-header p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cyan);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ourServices-header h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+}
+
+.service {
+  padding: 30px;
+  text-align: center;
+}
+
+.service img {
+  width: 20%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 22px;
+  color: var(--blue);
+}
+
+.service p {
+  font-size: 16px;
+  color: #777;
+  padding: 0 40px;
+}

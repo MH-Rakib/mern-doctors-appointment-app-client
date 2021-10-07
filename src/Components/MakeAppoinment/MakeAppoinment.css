@@ -1,0 +1,30 @@
+.makeAppoinment {
+  background-color: rgba(7, 35, 58, 0.787);
+  margin-bottom: 100px;
+}
+
+.makeAppoinment-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.makeAppoinment-details h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #eee;
+}
+.makeAppoinment-details p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.makeAppoinment-details button {
+  font-size: 20px;
+  color: #fff;
+  background-color: var(--cyan);
+  padding: 12px 20px;
+  border-radius: 3px;
+  border: none;
+}

@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, React, useState } from "react";
+import Home from "./Pages/Home/Home";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Appoinment from "./Pages/Appoinment/Appoinment";
+import UserLogin from "./Pages/UserLogin/UserLogin";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+
+export const UserContext = createContext();
 
 function App() {
+  const [selectedAppointmentDate, setSelectedAppointmentDate] = useState(
+    new Date()
+  );
+  const [loggedInUser, setLoggedInUser] = useState({
+    isSigned: false,
+    name: "",
+    email: "",
+    password: "",
+    message: "",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider
+      value={{
+        appointmentDate: [selectedAppointmentDate, setSelectedAppointmentDate],
+        user: [loggedInUser, setLoggedInUser],
+      }}
+    >
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <PrivateRoute path="/appointment">
+              <Appoinment></Appoinment>
+            </PrivateRoute>
+            <Route path="/login">
+              <UserLogin></UserLogin>
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </UserContext.Provider>
   );
 }
 
