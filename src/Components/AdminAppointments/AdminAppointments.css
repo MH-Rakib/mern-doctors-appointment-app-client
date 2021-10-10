@@ -1,0 +1,28 @@
+.adminAppointmentsList-header {
+  background-color: var(--cyan);
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.adminAppointmentsList-header p {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  color: #555;
+}
+
+.adminAppointmentsList {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px #f0f0f0;
+}
+
+.adminAppointmentsList p {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  color: #555;
+}

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Appoinment from "./Pages/Appoinment/Appoinment";
 import UserLogin from "./Pages/UserLogin/UserLogin";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
 
 export const UserContext = createContext();
 
@@ -37,6 +38,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <UserLogin></UserLogin>
+            </Route>
+            <Route path="/admin">
+              <AdminDashboard></AdminDashboard>
             </Route>
           </Switch>
         </Router>

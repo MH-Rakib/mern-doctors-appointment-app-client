@@ -1,0 +1,40 @@
+.stats {
+  background-color: var(--cyan);
+  padding: 15px 20px;
+  border-radius: 7px;
+}
+
+.stats .amount p {
+  font-size: 42px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  padding: 0 10px;
+}
+
+.stats .title p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.appointmentByService-card {
+  margin: 15px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px #f0f0f0;
+}
+
+.appointmentByService {
+  padding-top: 50px;
+}
+
+.appointmentByService-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+}

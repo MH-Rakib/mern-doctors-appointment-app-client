@@ -1,0 +1,35 @@
+.adminSidebar {
+  min-height: 650px;
+}
+
+.sidebar-items {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.sidebar-items:hover {
+  color: var(--cyan);
+}
+
+.sidebar-items .icon {
+  margin-right: 15px;
+}
+
+.active-sidebar-items {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--cyan);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.active-sidebar-items .icon {
+  margin-right: 15px;
+}

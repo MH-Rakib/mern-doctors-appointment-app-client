@@ -42,7 +42,9 @@ const Header = () => {
               Login
             </Nav.Link>
           )}
-          <Nav.Link className="header-menu admin-button">Admin</Nav.Link>
+          <Nav.Link as={Link} to="/admin" className="header-menu admin-button">
+            Admin
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>
