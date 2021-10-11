@@ -10,6 +10,7 @@ const AdminDashboard = () => {
   let { path, url } = useRouteMatch();
 
   const [allData, setAllData] = useState([]);
+  // console.log(allData);
   const [adminDashboard, setAdminDashboard] = useState("dashboard");
   const handleDashboard = (string) => {
     setAdminDashboard(string);
@@ -19,7 +20,7 @@ const AdminDashboard = () => {
     fetch("http://localhost:5000/getAllAppointments")
       .then((res) => res.json())
       .then((data) => setAllData(data));
-  }, []);
+  }, [allData]);
   return (
     <Container>
       <Row className="adminDashboard">
@@ -35,7 +36,7 @@ const AdminDashboard = () => {
             <Dashboard allData={allData}></Dashboard>
           )}
           {adminDashboard === "appointments" && (
-            <AdminAppointments allData={allData}></AdminAppointments>
+            <AdminAppointments data={[allData, setAllData]}></AdminAppointments>
           )}
         </Col>
       </Row>

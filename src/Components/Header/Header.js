@@ -26,10 +26,10 @@ const Header = () => {
 
         <Nav className="ms-auto">
           {loggedInUser.isSigned ? (
-            <Nav.Link className="header-menu text-light">
+            <Nav.Link className="header-menu loggedInUserName">
               <div>
                 <FaUserAlt className="loggedInUserIcon" />
-                <span>{loggedInUser.name || "MHRakib"}</span>
+                <span>{loggedInUser.name}</span>
                 <MdExitToApp className="logoutIcon" />
               </div>
             </Nav.Link>

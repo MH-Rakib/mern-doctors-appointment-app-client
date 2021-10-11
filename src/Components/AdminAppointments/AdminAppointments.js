@@ -4,9 +4,9 @@ import "./AdminAppointments.css";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 
-const AdminAppointments = ({ allData }) => {
-  console.log(allData);
-  const handleDeleteAppointments = (event, val) => {
+const AdminAppointments = ({ data }) => {
+  const [allData, setAllData] = data;
+  const handleDeleteAppointments = (val) => {
     // const id = obj._id;
     console.log(val);
     console.log(typeof val);
@@ -17,6 +17,7 @@ const AdminAppointments = ({ allData }) => {
       .then((result) => {
         if (result) {
           alert("Deleted Successfully!");
+          // setAllData([]);
         }
       });
   };
@@ -63,7 +64,7 @@ const AdminAppointments = ({ allData }) => {
           <Col
             md={2}
             style={{ cursor: "pointer" }}
-            onClick={() => handleDeleteAppointments(Event, obj._id)}
+            onClick={() => handleDeleteAppointments(obj._id)}
           >
             <p className="text-danger">
               {" "}

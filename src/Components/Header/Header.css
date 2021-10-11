@@ -24,3 +24,7 @@
   padding: 7px 15px !important;
   border-radius: 3px;
 }
+
+.loggedInUserName {
+  color: var(--cyan) !important;
+}
