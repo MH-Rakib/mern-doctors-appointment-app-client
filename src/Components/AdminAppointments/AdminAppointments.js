@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap";
 
 const AdminAppointments = ({ data }) => {
   const [allData, setAllData] = data;
-  const handleDeleteAppointments = (val) => {
+  const handleDeleteAppointments = (val, subject) => {
     // const id = obj._id;
     console.log(val);
     console.log(typeof val);
@@ -17,7 +17,8 @@ const AdminAppointments = ({ data }) => {
       .then((result) => {
         if (result) {
           alert("Deleted Successfully!");
-          // setAllData([]);
+          const data = allData.filter((obj) => obj.subject !== subject);
+          setAllData(data);
         }
       });
   };
@@ -64,7 +65,7 @@ const AdminAppointments = ({ data }) => {
           <Col
             md={2}
             style={{ cursor: "pointer" }}
-            onClick={() => handleDeleteAppointments(obj._id)}
+            onClick={() => handleDeleteAppointments(obj._id, obj.subject)}
           >
             <p className="text-danger">
               {" "}

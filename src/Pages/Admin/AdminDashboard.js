@@ -20,7 +20,8 @@ const AdminDashboard = () => {
     fetch("http://localhost:5000/getAllAppointments")
       .then((res) => res.json())
       .then((data) => setAllData(data));
-  }, [allData]);
+  }, []);
+
   return (
     <Container>
       <Row className="adminDashboard">
